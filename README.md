@@ -175,11 +175,11 @@ Restarting a notebook kernel does not remove saved model files. Training at an e
 
 ## Troubleshooting
 
-### Dataset not found
+### - Dataset not found
 
 Confirm the file is named `AB_NYC_2019.csv` and is inside the project's `data/` folder.
 
-### Port 8888 is already in use
+### - Port 8888 is already in use
 
 Change the host port in the launch command to:
 
@@ -189,15 +189,15 @@ Change the host port in the launch command to:
 
 Then open `http://127.0.0.1:8889` and use the token printed in the terminal.
 
-### A model is skipped
+### - A model is skipped
 
 Check the training log for missing dependencies, memory constraints, or an exhausted time limit. Training can still succeed using the remaining models.
 
-### Dependencies were changed
+### - Dependencies were changed
 
 Rebuild the image, stop the existing container, and launch a new container to use the updated environment.
 
-### Low disk space or memory
+### - Low disk space or memory
 
 Free disk space before further training. Close unused applications or adjust Docker/WSL resource limits.
 
